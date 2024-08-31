@@ -160,11 +160,20 @@ nav .nav-link {
 
 #home {
     background-image: url(../images/bg1.png);
-    background-position: 0px 0px;
+    background-position: center center;
     background-size: cover;
     height: 100vh;
     margin-bottom: 50px;
 }
+
+/* @media screen and (max-width:768px){
+    #home{
+        background-size:cover ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        overflow-x: hidden;
+    }
+} */
 
 .home-icons span {
     padding: 5px;
