@@ -109,21 +109,61 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
 // ---------------------
 
-window.addEventListener('scroll', checkNavbar)
-window.addEventListener('load', checkNavbar)
+window.addEventListener('scroll', checkNavbar);
+window.addEventListener('scroll', updateActiveLink);
+window.addEventListener('load', () => {
+    checkNavbar();
+    updateActiveLink();
+});
 
-
-function checkNavbar(){
+function checkNavbar() {
     const navbar = document.getElementById('navbar-example');
     const about = document.getElementById('about');
     const aboutTop = about.offsetTop - 100;
 
     if (window.scrollY >= aboutTop) {
-        navbar.classList.add('bg-dark', 'shadow-lg')
-        navbar.classList.remove('bg-transparent')
-    }
-    else {
-        navbar.classList.add('bg-transparent')
-        navbar.classList.remove('bg-dark', 'shadow-lg')
+        navbar.classList.add('bg-dark', 'shadow-lg');
+        navbar.classList.remove('bg-transparent');
+    } else {
+        navbar.classList.add('bg-transparent');
+        navbar.classList.remove('bg-dark', 'shadow-lg');
     }
 }
+
+function updateActiveLink() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (scrollY >= sectionTop && scrollY < (sectionTop + section.offsetHeight)) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${ currentSection }`) {
+        link.classList.add('active');
+    }
+});
+}
+
+
+// ---------
+
+
+document.querySelectorAll('.navbar-nav .nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
