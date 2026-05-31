@@ -205,18 +205,21 @@ document.addEventListener('DOMContentLoaded', function () {
             { type: 'image', src: 'images/social7.png' }
         ],
         'thumbnails': [
-            { type: 'image', src: 'images/thumbnails/thumb1.jpg' },
-            { type: 'image', src: 'images/thumbnails/thumb2.jpg' },
-            { type: 'image', src: 'images/thumbnails/thumb3.jpg' },
-            { type: 'image', src: 'images/thumbnails/thumb4.jpg' },
-            { type: 'image', src: 'images/thumbnails/thumb5.jpg' }
+            { type: 'image', src: 'images/thumb1.png' },
+            { type: 'image', src: 'images/thumb2.png' },
+            { type: 'image', src: 'images/thumb3.png' },
+            { type: 'image', src: 'images/thumb4.png' },
+            { type: 'image', src: 'images/thumb5.png' },
+            { type: 'image', src: 'images/thumb6.png' },
         ],
         'infographics': [
-            { type: 'image', src: 'images/infographics/info1.jpg' },
-            { type: 'image', src: 'images/infographics/info2.jpg' },
-            { type: 'image', src: 'images/infographics/info3.jpg' },
-            { type: 'image', src: 'images/infographics/info4.jpg' },
-            { type: 'image', src: 'images/infographics/info5.jpg' }
+            { type: 'image', src: 'images/info1.png' },
+            { type: 'image', src: 'images/info2.png' },
+            { type: 'image', src: 'images/info3.png' },
+            { type: 'image', src: 'images/info4.png' },
+            { type: 'image', src: 'images/info5.png' },
+            { type: 'image', src: 'images/info6.png' },
+            { type: 'image', src: 'images/info7.png' },
         ],
         '3d': [
             { type: 'video', src: 'images/3d21.mp4' },
