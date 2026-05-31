@@ -466,10 +466,11 @@ a {
 .card img {
     transition: all 0.5s;
     overflow-y: hidden !important;
+    will-change: transform; /* تحسين الأداء */
 }
 
 .card .position-relative:hover img {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.2);
 }
 
 .last-card {

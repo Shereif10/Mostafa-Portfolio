@@ -1,55 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOSTAFA ELSWAF | GRAPHIC DESIGNER</title>
     <link rel="icon" href="images/m.png">
-    <meta name="description" content="Daniel template">
+    <meta name="description" content="Mostafa Elswaf Graphic Designer Portfolio">
     <meta name="keywords" content="mostafa elswaf, responsive, portfolio">
     <meta name="author" content="Shereif">
+
+    <!-- تحسينات الاتصال -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+
+    <!-- Preload الخطوط مع تحسين التحميل -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
+
+    <!-- Preload صورة الخلفية -->
+    <link rel="preload" href="images/bg1.png" as="image">
+
+    <!-- CSS غير متزامن للمكتبات الخارجية -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
 
     <!-- NAVBAR -->
-    <nav data-aos-delay="100" data-aos="fade-down"
-        class="navbar shadow-lg py-3 navbar-expand-lg bg-transparent navbar-light fixed-top" id="navbar-example">
+    <nav data-aos-delay="100" data-aos="fade-down" class="navbar shadow-lg py-3 navbar-expand-lg bg-transparent navbar-light fixed-top" id="navbar-example">
         <div class="container">
             <a data-aos-delay="700" data-aos="fade-down-left" class="navbar-brand text-white" href="#">MOSTAFA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li data-aos-delay="500" data-aos="fade-down-right" class="nav-item">
-                        <a class="nav-link active me-4" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li data-aos-delay="600" data-aos="fade-down-right" class="nav-item">
-                        <a class="nav-link me-4" href="#about">About</a>
-                    </li>
-                    <li data-aos-delay="700" data-aos="fade-down-right" class="nav-item">
-                        <a class="nav-link me-4" href="#services">Services</a>
-                    </li>
-                    <li data-aos-delay="800" data-aos="fade-down-right" class="nav-item">
-                        <a class="nav-link me-4" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li data-aos-delay="900" data-aos="fade-down-right" class="nav-item">
-                        <a class="nav-link me-4" href="#contact">Contact</a>
-                    </li>
+                    <li data-aos-delay="500" data-aos="fade-down-right" class="nav-item"><a class="nav-link active me-4" href="#home">Home</a></li>
+                    <li data-aos-delay="600" data-aos="fade-down-right" class="nav-item"><a class="nav-link me-4" href="#about">About</a></li>
+                    <li data-aos-delay="700" data-aos="fade-down-right" class="nav-item"><a class="nav-link me-4" href="#services">Services</a></li>
+                    <li data-aos-delay="800" data-aos="fade-down-right" class="nav-item"><a class="nav-link me-4" href="#portfolio">Portfolio</a></li>
+                    <li data-aos-delay="900" data-aos="fade-down-right" class="nav-item"><a class="nav-link me-4" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -61,41 +56,17 @@
             <h5 data-aos-delay="500" data-aos="zoom-in" class="text-white hello">Hello</h5>
             <h1 class="text-white my-4">I Am
                 <span data-aos="zoom-in">
-                    <a href="" class="typewrite" data-period="2000"
-                        data-type='[ " Mostafa Elswaf ", " Graphic Designer " ]'>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ " Mostafa Elswaf ", " Graphic Designer " ]'>
                         <span class="wrap"></span>
                     </a>
                 </span>
             </h1>
             <div class="home-icons pt-3 d-flex justify-content-center align-items-center">
-                <div data-aos-delay="400" data-aos="fade-up">
-                    <a href="https://www.facebook.com/share/5jFopjZMsN6e4REU/?mibextid=qi2Omg" target="_blank"
-                        class="text-white mx-2" aria-label="Facebook">
-                        <span class="d-inline-block"><i class="fa-brands fa-facebook-f"></i></span>
-                    </a>
-                </div>
-                <div data-aos-delay="500" data-aos="fade-up">
-                    <a href="https://www.instagram.com/m.elswafart_?igsh=bG1kNXVhZ2ltZWFw" target="_blank"
-                        class="text-white mx-2" aria-label="Instagram">
-                        <span class="d-inline-block"><i class="fa-brands fa-instagram"></i></span>
-                    </a>
-                </div>
-                <div data-aos-delay="600" data-aos="fade-up">
-                    <a href="https://wa.me/+201222536146" target="_blank" class="text-white mx-2" aria-label="WhatsApp">
-                        <span class="d-inline-block"><i class="fa-brands fa-whatsapp"></i></span>
-                    </a>
-                </div>
-                <div data-aos-delay="700" data-aos="fade-up">
-                    <a href="https://www.linkedin.com/in/mostafa-elswaf-771bb7287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        target="_blank" class="text-white mx-2" aria-label="LinkedIn">
-                        <span class="d-inline-block"><i class="fa-brands fa-linkedin-in"></i></span>
-                    </a>
-                </div>
-                <div data-aos-delay="800" data-aos="fade-up">
-                    <a href="https://www.behance.net/mostafaelswaf" target="_blank" class="text-white mx-2" aria-label="Behance">
-                        <span class="d-inline-block"><i class="fa-brands fa-behance"></i></span>
-                    </a>
-                </div>
+                <div data-aos-delay="400" data-aos="fade-up"><a href="https://www.facebook.com/share/5jFopjZMsN6e4REU/?mibextid=qi2Omg" target="_blank" class="text-white mx-2" aria-label="Facebook"><span class="d-inline-block"><i class="fa-brands fa-facebook-f"></i></span></a></div>
+                <div data-aos-delay="500" data-aos="fade-up"><a href="https://www.instagram.com/m.elswafart_?igsh=bG1kNXVhZ2ltZWFw" target="_blank" class="text-white mx-2" aria-label="Instagram"><span class="d-inline-block"><i class="fa-brands fa-instagram"></i></span></a></div>
+                <div data-aos-delay="600" data-aos="fade-up"><a href="https://wa.me/+201222536146" target="_blank" class="text-white mx-2" aria-label="WhatsApp"><span class="d-inline-block"><i class="fa-brands fa-whatsapp"></i></span></a></div>
+                <div data-aos-delay="700" data-aos="fade-up"><a href="https://www.linkedin.com/in/mostafa-elswaf-771bb7287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-white mx-2" aria-label="LinkedIn"><span class="d-inline-block"><i class="fa-brands fa-linkedin-in"></i></span></a></div>
+                <div data-aos-delay="800" data-aos="fade-up"><a href="https://www.behance.net/mostafaelswaf" target="_blank" class="text-white mx-2" aria-label="Behance"><span class="d-inline-block"><i class="fa-brands fa-behance"></i></span></a></div>
             </div>
         </div>
     </section>
@@ -106,8 +77,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200" data-aos-easing="ease-in-out">
                     <div class="about-image me-3">
-                        <img src="images/Untitled-pngg-(1).png" alt="Mostafa Elswaf" loading="lazy" decoding="async"
-                            class="float-end">
+                        <img src="images/Untitled-pngg-(1).png" alt="Mostafa Elswaf" loading="lazy" decoding="async" class="float-end">
                     </div>
                 </div>
                 <div class="col-lg-7 px-2 about-content" data-aos="fade-right" data-aos-delay="400">
@@ -127,10 +97,8 @@
                         combines creativity, strategy, and attention to detail.
                     </p>
                     <div class="about-btns">
-                        <a href="./Mostafa-Elswaf-Resume.pdf" target="_blank" rel="noopener noreferrer"
-                            download="Mostafa_Elswaf_CV" class="btn btn-dark download">Download CV</a>
-                        <a href="https://forms.gle/pZXZ89nmb1zr99zU8" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-outline-dark">Brief</a>
+                        <a href="./Mostafa-Elswaf-Resume.pdf" target="_blank" rel="noopener noreferrer" download="Mostafa_Elswaf_CV" class="btn btn-dark download">Download CV</a>
+                        <a href="https://forms.gle/pZXZ89nmb1zr99zU8" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">Brief</a>
                     </div>
                 </div>
             </div>
@@ -146,57 +114,32 @@
             <div class="row align-items-stretch">
                 <div data-aos-delay="300" data-aos="fade-right" class="col-md-4 p-0 m-0 text-center mb-4">
                     <div class="service-item bg-white py-5">
-                        <div class="service-icon d-inline-block">
-                            <i class="fa-regular fa-images"></i>
-                        </div>
-                        <div class="service-content text-center">
-                            <h6>Photomanipulation</h6>
-                            <p class="m-0 px-4">Creative photo manipulation artworks that transform ideas into visually striking designs for advertising, branding and digital campaigns.</p>
-                        </div>
+                        <div class="service-icon d-inline-block"><i class="fa-regular fa-images"></i></div>
+                        <div class="service-content text-center"><h6>Photomanipulation</h6><p class="m-0 px-4">Creative photo manipulation artworks that transform ideas into visually striking designs for advertising, branding and digital campaigns.</p></div>
                     </div>
                 </div>
                 <div data-aos-delay="300" data-aos="fade-up" class="col-md-4 p-0 m-0 text-center mb-4">
                     <div class="service-item bg-white py-5">
-                        <div class="service-icon d-inline-block">
-                            <i class="fa-solid fa-brain"></i>
-                        </div>
-                        <div class="service-content text-center">
-                            <h6>Branding</h6>
-                            <p class="m-0 px-4">Unique brand identities and logo designs that help businesses build recognition, trust and a memorable visual presence.</p>
-                        </div>
+                        <div class="service-icon d-inline-block"><i class="fa-solid fa-brain"></i></div>
+                        <div class="service-content text-center"><h6>Branding</h6><p class="m-0 px-4">Unique brand identities and logo designs that help businesses build recognition, trust and a memorable visual presence.</p></div>
                     </div>
                 </div>
                 <div data-aos-delay="300" data-aos="fade-left" class="col-md-4 p-0 m-0 text-center mb-4">
                     <div class="service-item bg-white py-5">
-                        <div class="service-icon d-inline-block">
-                            <i class="fa-solid fa-chalkboard-user"></i>
-                        </div>
-                        <div class="service-content text-center">
-                            <h6>Social Media</h6>
-                            <p class="m-0 px-4">Engaging social media designs crafted to attract attention, increase audience interaction and strengthen your online presence.</p>
-                        </div>
+                        <div class="service-icon d-inline-block"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div class="service-content text-center"><h6>Social Media</h6><p class="m-0 px-4">Engaging social media designs crafted to attract attention, increase audience interaction and strengthen your online presence.</p></div>
                     </div>
                 </div>
                 <div data-aos-delay="300" data-aos="fade-right" class="col-md-4 p-0 m-0 text-center mb-4">
                     <div class="service-item bg-white py-5">
-                        <div class="service-icon d-inline-block">
-                            <i class="fa-solid fa-film"></i>
-                        </div>
-                        <div class="service-content text-center">
-                            <h6>Montage</h6>
-                            <p class="m-0 px-4">Professional video editing and montage services featuring smooth transitions, storytelling and visually appealing content.</p>
-                        </div>
+                        <div class="service-icon d-inline-block"><i class="fa-solid fa-film"></i></div>
+                        <div class="service-content text-center"><h6>Montage</h6><p class="m-0 px-4">Professional video editing and montage services featuring smooth transitions, storytelling and visually appealing content.</p></div>
                     </div>
                 </div>
                 <div data-aos-delay="300" data-aos="fade-up" class="col-md-4 p-0 m-0 text-center mb-4">
                     <div class="service-item bg-white py-5">
-                        <div class="service-icon d-inline-block">
-                            <i class="fa-solid fa-cube"></i>
-                        </div>
-                        <div class="service-content text-center">
-                            <h6>3D Design</h6>
-                            <p class="m-0 px-4">High-quality 3D modeling and product visualization that bring concepts to life with realistic details and modern presentation styles.</p>
-                        </div>
+                        <div class="service-icon d-inline-block"><i class="fa-solid fa-cube"></i></div>
+                        <div class="service-content text-center"><h6>3D Design</h6><p class="m-0 px-4">High-quality 3D modeling and product visualization that bring concepts to life with realistic details and modern presentation styles.</p></div>
                     </div>
                 </div>
             </div>
@@ -209,121 +152,58 @@
             <h3 data-aos="zoom-in">Portfolio.</h3>
         </div>
 
-        <!-- أزرار الفلترة -->
         <ul class="nav d-flex justify-content-center nav-pills mb-3" id="portfolio-filter">
-            <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
-                <button class="nav-link pb-0 active" data-filter="all">All</button>
-            </li>
-            <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
-                <button class="nav-link pb-0" data-filter="photomanipulation">Photomanipulation</button>
-            </li>
-            <li class="nav-item" data-aos="fade-down" data-aos-delay="400">
-                <button class="nav-link pb-0" data-filter="social-media">Social Media</button>
-            </li>
-            <li class="nav-item" data-aos="fade-down" data-aos-delay="500">
-                <button class="nav-link pb-0" data-filter="branding">Branding</button>
-            </li>
-            <li class="nav-item" data-aos="fade-down" data-aos-delay="600">
-                <button class="nav-link pb-0" data-filter="thumbnails">Thumbnails</button>
-            </li>
-            <li class="nav-item" data-aos="fade-down" data-aos-delay="700">
-                <button class="nav-link pb-0" data-filter="3d">3D Design</button>
-            </li>
-            <li class="nav-item" data-aos="fade-down" data-aos-delay="800">
-                <button class="nav-link pb-0" data-filter="infographics">Infographics</button>
-            </li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="200"><button class="nav-link pb-0 active" data-filter="all">All</button></li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="300"><button class="nav-link pb-0" data-filter="photomanipulation">Photomanipulation</button></li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="400"><button class="nav-link pb-0" data-filter="social-media">Social Media</button></li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="500"><button class="nav-link pb-0" data-filter="branding">Branding</button></li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="600"><button class="nav-link pb-0" data-filter="thumbnails">Thumbnails</button></li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="700"><button class="nav-link pb-0" data-filter="3d">3D Design</button></li>
+            <li class="nav-item" data-aos="fade-down" data-aos-delay="800"><button class="nav-link pb-0" data-filter="infographics">Infographics</button></li>
         </ul>
 
-        <!-- الكاردات + Social Media كارد -->
         <div class="container">
             <div class="row gy-4" id="portfolio-items">
-
                 <!-- كارد Elnahas -->
                 <div class="col-md-4 cardd" data-category="branding" data-aos-delay="300" data-aos="fade-down">
                     <a href="https://www.behance.net/gallery/208591913/Elnahas" target="_blank">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/elnahas-portfolio.png" class="card-img-top w-100" alt="Elnahas">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">Elnahas</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">Elnahas <br> Logo</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/icons8-illustrator.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/elnahas-portfolio.png" class="card-img-top w-100" alt="Elnahas"></div><div class="blog-title position-absolute text-center"><h6 class="travel">Elnahas</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Elnahas <br> Logo</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/icons8-illustrator.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
 
+                <!-- كارد Infographics -->
+                <div class="col-md-4 cardd" data-category="infographics" data-aos-delay="300" data-aos="fade-up">
+                    <a href="#" class="open-gallery" data-gallery="infographics">
+                        <div class="card last-card m-0 p-0 overflow-hidden">
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/infographics-cover.png" class="card-img-top w-100" alt="Infographics Designs"></div><div class="blog-title position-absolute text-center"><h6 class="travel">Infographics</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Infographics <br> Designs</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool"></div>
+                        </div>
+                    </a>
+                </div>
 
-<!-- كارد Infographics -->
-<div class="col-md-4 cardd" data-category="infographics" data-aos-delay="300" data-aos="fade-up">
-    <a href="#" class="open-gallery" data-gallery="infographics">
-        <div class="card last-card m-0 p-0 overflow-hidden">
-            <div class="position-relative">
-                <div class="position-relative overflow-hidden">
-                    <img loading="lazy" src="images/infographics-cover.png" class="card-img-top w-100" alt="Infographics Designs">
+                <!-- كارد 3D Design -->
+                <div class="col-md-4 cardd" data-category="3d" data-aos-delay="300" data-aos="fade-up">
+                    <a href="#" class="open-gallery" data-gallery="3d">
+                        <div class="card last-card m-0 p-0 overflow-hidden">
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/3d-cover.png" class="card-img-top w-100" alt="3D Designs"></div><div class="blog-title position-absolute text-center"><h6 class="travel">3D Design</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">3D <br> Designs</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool"></div>
+                        </div>
+                    </a>
                 </div>
-                <div class="blog-title position-absolute text-center">
-                    <h6 class="travel">Infographics</h6>
-                </div>
-            </div>
-            <div class="card-body">
-                <p class="card-title fw-bold text-center mb-3">Infographics <br> Designs</p>
-            </div>
-            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                <img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool">
-            </div>
-        </div>
-    </a>
-</div>
-
-
-<!-- كارد 3D Design -->
-<div class="col-md-4 cardd" data-category="3d" data-aos-delay="300" data-aos="fade-up">
-    <a href="#" class="open-gallery" data-gallery="3d">
-        <div class="card last-card m-0 p-0 overflow-hidden">
-            <div class="position-relative">
-                <div class="position-relative overflow-hidden">
-                    <img loading="lazy" src="images/3d-cover.png" class="card-img-top w-100" alt="3D Designs">
-                </div>
-                <div class="blog-title position-absolute text-center">
-                    <h6 class="travel">3D Design</h6>
-                </div>
-            </div>
-            <div class="card-body">
-                <p class="card-title fw-bold text-center mb-3">3D <br> Designs</p>
-            </div>
-            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                <img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool">
-            </div>
-        </div>
-    </a>
-</div>
 
                 <!-- كارد V7 -->
                 <div class="col-md-4 cardd" data-category="photomanipulation" data-aos-delay="300" data-aos="fade-up">
                     <a href="https://www.behance.net/gallery/206685273/v7-Manipulation-Design" target="_blank">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/v7.png" class="card-img-top w-100" alt="V7 soda">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">V7</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">V7 <br> Manipulation</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/v7.png" class="card-img-top w-100" alt="V7 soda"></div><div class="blog-title position-absolute text-center"><h6 class="travel">V7</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">V7 <br> Manipulation</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
@@ -332,20 +212,9 @@
                 <div class="col-md-4 cardd" data-category="photomanipulation" data-aos-delay="300" data-aos="fade-left">
                     <a href="https://www.behance.net/gallery/206684135/Orange-Juice-Manipulation" target="_blank">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/orange-juice.png" class="card-img-top w-100" alt="orange juice">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">Orange Juice</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">Orange juice <br> Manipulation</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/orange-juice.png" class="card-img-top w-100" alt="orange juice"></div><div class="blog-title position-absolute text-center"><h6 class="travel">Orange Juice</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Orange juice <br> Manipulation</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
@@ -354,20 +223,9 @@
                 <div class="col-md-4 cardd" data-category="photomanipulation" data-aos-delay="300" data-aos="fade-right">
                     <a href="https://www.behance.net/gallery/206682751/Burger-Manipulation" target="_blank">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/burger.png" class="card-img-top w-100" alt="Burger">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">Burger</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">Burger <br> Photomanipulation</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/burger.png" class="card-img-top w-100" alt="Burger"></div><div class="blog-title position-absolute text-center"><h6 class="travel">Burger</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Burger <br> Photomanipulation</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
@@ -376,20 +234,9 @@
                 <div class="col-md-4 cardd" data-category="social-media" data-aos-delay="300" data-aos="fade-up">
                     <a href="#" class="open-gallery" data-gallery="social-media">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/social-media-cover.jpg" class="card-img-top w-100" alt="Social Media Designs">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">Social Media</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">Social Media <br> Designs</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/social-media-cover.jpg" class="card-img-top w-100" alt="Social Media Designs"></div><div class="blog-title position-absolute text-center"><h6 class="travel">Social Media</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Social Media <br> Designs</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
@@ -398,65 +245,31 @@
                 <div class="col-md-4 cardd" data-category="photomanipulation" data-aos-delay="300" data-aos="fade-right">
                     <a href="https://www.behance.net/gallery/206453455/Photomanipulation-Designs" target="_blank">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/strange-planet.png" class="card-img-top w-100" alt="strange planet">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">Strange Planet</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">From Strange Planet <br> To Stranger One</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/strange-planet.png" class="card-img-top w-100" alt="strange planet"></div><div class="blog-title position-absolute text-center"><h6 class="travel">Strange Planet</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">From Strange Planet <br> To Stranger One</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
 
-                
                 <!-- كارد Thumbnails -->
-<div class="col-md-4 cardd" data-category="thumbnails" data-aos-delay="300" data-aos="fade-down">
-    <a href="#" class="open-gallery" data-gallery="thumbnails">
-        <div class="card last-card m-0 p-0 overflow-hidden">
-            <div class="position-relative">
-                <div class="position-relative overflow-hidden">
-                    <img loading="lazy" src="images/thumbnails-cover.png" class="card-img-top w-100" alt="Thumbnails Designs">
+                <div class="col-md-4 cardd" data-category="thumbnails" data-aos-delay="300" data-aos="fade-down">
+                    <a href="#" class="open-gallery" data-gallery="thumbnails">
+                        <div class="card last-card m-0 p-0 overflow-hidden">
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/thumbnails-cover.png" class="card-img-top w-100" alt="Thumbnails Designs"></div><div class="blog-title position-absolute text-center"><h6 class="travel">Thumbnails</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Thumbnails <br> Designs</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool"></div>
+                        </div>
+                    </a>
                 </div>
-                <div class="blog-title position-absolute text-center">
-                    <h6 class="travel">Thumbnails</h6>
-                </div>
-            </div>
-            <div class="card-body">
-                <p class="card-title fw-bold text-center mb-3">Thumbnails <br> Designs</p>
-            </div>
-            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                <img loading="lazy" src="images/photoshop-logo-svg.svg" class="w-25 progs" alt="tool">
-            </div>
-        </div>
-    </a>
-</div>
 
                 <!-- كارد MACARONI -->
                 <div class="col-md-4 cardd" data-category="branding" data-aos-delay="300" data-aos="fade-left">
                     <a href="https://www.behance.net/gallery/190267765/MACARONI-RESTAURANT-IDENTITY" target="_blank">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/mr-macaroni.png" class="card-img-top w-100" alt="mr macaroni restaurant">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">MACARONI</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">Identity For Class A <br> Macaroni Restaurant</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/icons8-illustrator.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/mr-macaroni.png" class="card-img-top w-100" alt="mr macaroni restaurant"></div><div class="blog-title position-absolute text-center"><h6 class="travel">MACARONI</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Identity For Class A <br> Macaroni Restaurant</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/icons8-illustrator.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
@@ -465,20 +278,9 @@
                 <div class="col-md-4 cardd" data-category="branding" data-aos-delay="300" data-aos="fade-down">
                     <a href="https://www.behance.net/gallery/187772205/Lawyer-Identity" target="_blank">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/lawyer.png" class="card-img-top w-100" alt="lawyer logo">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">LAWYER</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">Identity For <br> An Egyptian Lawyer</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/icons8-illustrator.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/lawyer.png" class="card-img-top w-100" alt="lawyer logo"></div><div class="blog-title position-absolute text-center"><h6 class="travel">LAWYER</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Identity For <br> An Egyptian Lawyer</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/icons8-illustrator.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
@@ -487,27 +289,14 @@
                 <div class="col-md-4 cardd" data-category="branding" data-aos-delay="300" data-aos="fade-right">
                     <a href="https://www.behance.net/gallery/195236573/Baladiyat-El-mahalla-logo-Evaluation" target="_blank">
                         <div class="card last-card m-0 p-0 overflow-hidden">
-                            <div class="position-relative">
-                                <div class="position-relative overflow-hidden">
-                                    <img loading="lazy" src="images/baldiyaa.png" class="card-img-top w-100" alt="Baladiyat El-mahalla logo">
-                                </div>
-                                <div class="blog-title position-absolute text-center">
-                                    <h6 class="travel">B.S.C</h6>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title fw-bold text-center mb-3">Rebranding Project for <br>Baldiyat Elmahalla Team</p>
-                            </div>
-                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light">
-                                <img loading="lazy" src="images/icons8-illustrator.svg" class="w-25 progs" alt="tool">
-                                <img loading="lazy" src="images/icons8-adobe-after-effects.svg" class="w-25 progs" alt="tool">
-                            </div>
+                            <div class="position-relative"><div class="position-relative overflow-hidden"><img loading="lazy" src="images/baldiyaa.png" class="card-img-top w-100" alt="Baladiyat El-mahalla logo"></div><div class="blog-title position-absolute text-center"><h6 class="travel">B.S.C</h6></div></div>
+                            <div class="card-body"><p class="card-title fw-bold text-center mb-3">Rebranding Project for <br>Baldiyat Elmahalla Team</p></div>
+                            <div class="list-group d-flex justify-content-center align-items-center card-foot list-group-flush row flex-row py-1 bg-light"><img loading="lazy" src="images/icons8-illustrator.svg" class="w-25 progs" alt="tool"><img loading="lazy" src="images/icons8-adobe-after-effects.svg" class="w-25 progs" alt="tool"></div>
                         </div>
                     </a>
                 </div>
-
-            </div> <!-- نهاية row -->
-        </div> <!-- نهاية container -->
+            </div>
+        </div>
     </section>
 
     <!-- CONTACT -->
@@ -518,50 +307,24 @@
         <div class="container">
             <div class="row">
                 <div data-aos-delay="200" data-aos="fade-down" class="col-lg-4 d-flex justify-content-center align-items-center text-center">
-                    <div class="contact-content">
-                        <span><i class="fa-solid fa-location-arrow"></i></span>
-                        <h6>Address</h6>
-                        <p>El-Mahalla El-Kubra - Egypt</p>
-                    </div>
+                    <div class="contact-content"><span><i class="fa-solid fa-location-arrow"></i></span><h6>Address</h6><p>El-Mahalla El-Kubra - Egypt</p></div>
                 </div>
                 <div data-aos-delay="300" data-aos="fade-down" class="col-lg-4 d-flex justify-content-center align-items-center text-center">
-                    <div class="contact-content">
-                        <span><i class="fa-solid fa-envelope"></i></span>
-                        <h6>Email</h6>
-                        <p>melswaf305@gmail.com</p>
-                    </div>
+                    <div class="contact-content"><span><i class="fa-solid fa-envelope"></i></span><h6>Email</h6><p>melswaf305@gmail.com</p></div>
                 </div>
                 <div data-aos-delay="400" data-aos="fade-down" class="col-lg-4 d-flex justify-content-center align-items-center text-center">
-                    <div class="contact-content">
-                        <span><i class="fa-solid fa-phone"></i></span>
-                        <h6>Phone</h6>
-                        <p>+20 010 5040 1525</p>
-                    </div>
+                    <div class="contact-content"><span><i class="fa-solid fa-phone"></i></span><h6>Phone</h6><p>+20 010 5040 1525</p></div>
                 </div>
             </div>
             <form action="https://formspree.io/f/mrbzawad" method="POST" id="contact-form">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div data-aos-delay="200" data-aos="fade-right" class="label">
-                            <input type="text" name="name" placeholder="Your Name" required class="w-100">
-                        </div>
-                    </div>
-                    <div data-aos-delay="400" data-aos="fade-left" class="col-lg-6">
-                        <div class="label">
-                            <input type="email" name="Email" placeholder="Your Email" required class="w-100">
-                        </div>
-                    </div>
+                    <div class="col-lg-6"><div data-aos-delay="200" data-aos="fade-right" class="label"><input type="text" name="name" placeholder="Your Name" required class="w-100"></div></div>
+                    <div data-aos-delay="400" data-aos="fade-left" class="col-lg-6"><div class="label"><input type="email" name="Email" placeholder="Your Email" required class="w-100"></div></div>
                 </div>
                 <div class="row">
-                    <div data-aos-delay="600" data-aos="fade-up" class="col-md-12">
-                        <div class="label textarea">
-                            <textarea name="message" id="message" rows="6" required cols="30" placeholder="Your Message" class="w-100"></textarea>
-                        </div>
-                    </div>
+                    <div data-aos-delay="600" data-aos="fade-up" class="col-md-12"><div class="label textarea"><textarea name="message" id="message" rows="6" required cols="30" placeholder="Your Message" class="w-100"></textarea></div></div>
                 </div>
-                <div data-aos-delay="800" data-aos="fade-up-right">
-                    <button class="btn btn-dark btn-outline-white submit">Submit</button>
-                </div>
+                <div data-aos-delay="800" data-aos="fade-up-right"><button class="btn btn-dark btn-outline-white submit">Submit</button></div>
             </form>
         </div>
     </section>
@@ -572,20 +335,18 @@
     </footer>
 
     <!-- Lightbox Gallery -->
-<div id="lightbox" class="lightbox">
-    <span class="lightbox-close">&times;</span>
-    <button class="lightbox-prev">&#10094;</button>
-    <button class="lightbox-next">&#10095;</button>
-    <div class="lightbox-content">
-        <img id="lightboxImg" src="" alt="Social Media">
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+        <div class="lightbox-content"><img id="lightboxImg" src="" alt="Gallery"></div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
     </div>
-    <div class="lightbox-counter" id="lightboxCounter"></div>
-</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/script.js"></script>
+    <!-- السكربتات (defer لتحميل أسرع) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
-
 </html>
